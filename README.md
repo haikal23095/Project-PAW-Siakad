@@ -36,15 +36,15 @@ Check info php on your browser =>  type http://[your_ip_address]/info.php
 mysql_secure_installation
 ```
 ### Enter the answer like below
-Enter current password for root (enter for none): 
-Switch to unix_socket authentication [Y/n] : Y
-Change the root password? [Y/n] : Y
-New password: 
-Re-enter new password:
-Remove anonymous users? [Y/n] : Y
-Disallow root login remotely? [Y/n] : N
-Remove test database and access to it? [Y/n] : Y
-Reload privilege tables now? [Y/n] : Y
+- Enter current password for root (enter for none): 
+- Switch to unix_socket authentication [Y/n] : Y
+- Change the root password? [Y/n] : Y
+- New password: 
+- Re-enter new password:
+- Remove anonymous users? [Y/n] : Y
+- Disallow root login remotely? [Y/n] : N
+- Remove test database and access to it? [Y/n] : Y
+- Reload privilege tables now? [Y/n] : Y
 
 #### ✅ **Setup Finished**
 
