@@ -57,4 +57,27 @@ git clone https://github.com/haikal23095/project-paw-siakad
 cd project-paw-siakad
 ```
 
+### 2️⃣ Login to database
+```sh
+mysql -u root -p
+```
+Enter password: [Your_Password]
+
+### 3️⃣ Create Database
+```sh
+CREATE DATABASE siakad;
+QUIT;
+```
+
+### 4️⃣ Import file sql ke Database
+```sh
+mysql -u root -p -i siakad < siakad.sql
+```
+
+### 5️⃣ Deploy to Hosting Provider
+```sh
+cd /etc/apache2/sites-available
+a2dissite 000-default.conf
+cp 000-default.conf siakad.com
+```
 
