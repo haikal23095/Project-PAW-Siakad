@@ -78,6 +78,25 @@ mysql -u root -p -i siakad < siakad.sql
 ```sh
 cd /etc/apache2/sites-available
 a2dissite 000-default.conf
-cp 000-default.conf siakad.com
+cp 000-default.conf siakad.com.conf
 ```
+### 6️⃣ Edit virtualhost Apache
+Edit file siakad.com using nano or vim, copy and replace down below
+```sh
+VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/siakad
 
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+```
+### exit and active the virtualhost
+```sh
+sudo a2ensite siakad.com
+```
+### restart apahce2
+```sh
+systemctl restart apache2
+```
