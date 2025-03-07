@@ -92,11 +92,20 @@ VirtualHost *:80>
 
 </VirtualHost>
 ```
-### exit and active the virtualhost
+### Exit and active the virtualhost
 ```sh
 sudo a2ensite siakad.com
 ```
-### restart apahce2
+### Restart apahce2
 ```sh
 systemctl restart apache2
 ```
+
+### Buat directory dan copy contain in code directoy 
+```sh
+sudo mkdir /var/www/siakad && sudo cp -r ~/project-paw-siakad/. /var/www/siakad/ 
+```
+
+Goto Your Browser type http://YOUR_IP_ADDRESS
+
+### ✅ Finish 🔥
