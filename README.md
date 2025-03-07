@@ -86,6 +86,7 @@ Edit file siakad.com using nano or vim, copy and replace down below
 VirtualHost *:80>
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/siakad
+        DirectoryIndex loginpage.php
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
